@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.out
+*.nav
+*.out
+*.pyg
+*.toc
+Hen*
+*.snm
+*.synctex.gz

@@ -1,0 +1,159 @@
+% Analyze Boulder Meetup
+% 2013-06-05 
+% Josh Montague, Data Scientist @Gnip
+% @jrmontag
+
+
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{gnip}
+
+% packages
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{fontspec}			%requires different tex engine
+%\usepackage{minted}			%highlighted source code
+%\usepackage{tikz}				%programatic graphic creation
+
+% footer
+\setbeamertemplate{footline}[text line]{
+\colorbox{white}{\parbox[25px]{\paperwidth} {\color{linecolour} {\line(1,0){500} \\ \hfill @jrmontag -- @Gnip}}}}
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+% title info
+\title{Data Science @ Gnip }
+\subtitle{\emph{\#AnalyzeBoulder} Meetup}
+\author{Josh Montague\texorpdfstring{\\ Data Scientist, Gnip Inc. \\ @jrmontag}{}} 
+\date{\today} 
+% beamer doesn't like \\ breaks in this context. above hack via http://tex.stackexchange.com/questions/10555/hyperref-warning-token-not-allowed-in-a-pdf-string
+
+
+
+
+\begin{document}
+
+% title
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Intro}
+
+%%%%%%%%%%%%%%%%%% gnip (quick facts) %%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{Gnip}
+
+\vspace{0.2in}
+
+\LARGE{What $\to$ \hspace{0.5in} social data provider}
+
+\vspace{0.2in}
+
+\LARGE{Who $\to  \hspace{1.2in} \approx$ 45 people* } 
+
+\vspace{0.2in}
+
+\LARGE{Where $\to$  \hspace{0.5in} Here! (Boulder, CO) }
+
+\vspace{0.2in}
+
+\LARGE{When $\to$ \hspace{0.75in} Founded 2008}
+
+\vspace{0.4in}
+
+% cheap way to right-justify
+{\hfill \large{*and hiring!}} 
+
+{\hfill \normalsize\url{http://gnip.com/careers}}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%% gnip (media v. data) %%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{social media v. social data}
+
+% grab EEE's talk slides from CU event
+
+\vspace{0.2in}
+
+\LARGE{tweet}
+%https://twitter.com/jrmontag/status/341549801088880640
+
+\vspace{0.2in}
+
+\LARGE{activity stream}
+% data created by social media activity 
+% https://gist.github.com/gnippy/2127654/raw/62c5710518eb01bb2326195c8d3e86f81bcf4d0a/Twitter+Power+Track+Sample+Payload+%28Activity+Streams%29
+
+\end{frame}
+
+
+%maybe this is an extra slide?
+
+%%%%%%%%%%%%%%%%%% gnip (data sources) %%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{sources \& volumes}
+
+%run the WP \#s by the team
+
+\begin{table}
+	\begin{tabular}{l|r}
+		\hline
+		{Publisher}   					&   	{Daily Activity} \\
+		\hline 
+		Twitter      					&	500 M \\
+		Tumblr      					&	90 M \\
+		Foursquare      					&	5 M \\
+		Wordpress$^{a}$ Comments 		&	2 M \\
+		Wordpress$^{a}$ Posts 			&	1 M \\
+		Disqus       					&	1.3 M \\
+		`Engagement'$^{b}$ 			&	2.4 M \\
+		\hline
+	\end{tabular}
+\end{table}
+% footnotes
+${}^a$ *.com + .org \\
+${}^b$ likes, votes (Disqus, WP, Tumblr, IntenseDebate)
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%% data science team %%%%%%%%%%%%%%%%%%%
+\begin{frame}
+ds team
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%% the data %%%%%%%%%%%%%%%%%%%
+\begin{frame}
+data
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%% data science %%%%%%%%%%%%%%%%%%%
+\begin{frame}
+data science projects
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%% the end %%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{thanks!}
+
+\vspace{0.5in}
+
+\begin{center}
+\Huge{Qs?}
+
+\vspace{0.5in}
+
+\normalsize{source \& contact info}
+
+\vspace{0.5in}
+
+\Large{Don't forget: we're hiring!} \\
+\url{http://gnip.com/careers}
+\end{center}
+
+\end{frame}
+
+\end{document}
+
