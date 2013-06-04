@@ -7,6 +7,8 @@ Josh Montague (@jrmontag)
 
 Data Scientist, Gnip (@Gnip) 
 
-Requires beamer, compiled with pdflatex in TeXworks on OS X
+10-minute overview of data science at Gnip.
+
+(Requires beamer, compiled with pdflatex in TeXworks on OS X)
 
 
