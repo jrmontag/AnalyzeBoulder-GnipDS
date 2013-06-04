@@ -3,11 +3,9 @@ AnalyzeBoulder Meetup Presentation
 
 2013-06-05
 
-Josh Montague (@jrmontag)
+Josh Montague (@jrmontag), Gnip 
 
-Data Scientist, Gnip (@Gnip) 
-
-10-minute overview of data science at Gnip.
+Quick (10-minute) overview of data science at Gnip.
 
 (Requires beamer, compiled with pdflatex in TeXworks on OS X)
 
