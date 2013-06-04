@@ -12,6 +12,9 @@
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[absolute,overlay]{textpos}
+  \setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
 %\usepackage{fontspec}			%requires different tex engine
 %\usepackage{minted}			%highlighted source code
 %\usepackage{tikz}				%programatic graphic creation
@@ -33,19 +36,21 @@
 
 \begin{document}
 
+
 % title
 \begin{frame}
 \titlepage
 \end{frame}
 
-\section{Intro}
 
 %%%%%%%%%%%%%%%%%% gnip (quick facts) %%%%%%%%%%%%%%%%%%%
 \begin{frame} \frametitle{Gnip}
 
+% change to Who, What, Where
+
 \vspace{0.2in}
 
-\LARGE{What $\to$ \hspace{0.5in} social data provider}
+\LARGE{Where $\to$  \hspace{0.55in} Here! (Boulder, CO) }
 
 \vspace{0.2in}
 
@@ -53,103 +58,152 @@
 
 \vspace{0.2in}
 
-\LARGE{Where $\to$  \hspace{0.5in} Here! (Boulder, CO) }
+\LARGE{What $\to$ \hspace{0.7in} social data provider}
 
-\vspace{0.2in}
-
-\LARGE{When $\to$ \hspace{0.75in} Founded 2008}
-
-\vspace{0.4in}
+\vspace{0.7in}
 
 % cheap way to right-justify
-{\hfill \large{*and hiring!}} 
+{\hfill \Large{*and hiring!}} 
 
 {\hfill \normalsize\url{http://gnip.com/careers}}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%% gnip (media v. data) %%%%%%%%%%%%%%%%%%%
-\begin{frame} \frametitle{social media v. social data}
-
-% grab EEE's talk slides from CU event
-
-\vspace{0.2in}
-
-\LARGE{tweet}
-%https://twitter.com/jrmontag/status/341549801088880640
-
-\vspace{0.2in}
-
-\LARGE{activity stream}
-% data created by social media activity 
-% https://gist.github.com/gnippy/2127654/raw/62c5710518eb01bb2326195c8d3e86f81bcf4d0a/Twitter+Power+Track+Sample+Payload+%28Activity+Streams%29
-
-\end{frame}
-
-
-%maybe this is an extra slide?
-
 %%%%%%%%%%%%%%%%%% gnip (data sources) %%%%%%%%%%%%%%%%%%%
 \begin{frame} \frametitle{sources \& volumes}
 
-%run the WP \#s by the team
+\vspace{0.1in}
 
 \begin{table}
 	\begin{tabular}{l|r}
 		\hline
-		{Publisher}   					&   	{Daily Activity} \\
+		{Publisher$^\dagger$}			&   	{Daily Activities} \\
 		\hline 
 		Twitter      					&	500 M \\
 		Tumblr      					&	90 M \\
 		Foursquare      					&	5 M \\
-		Wordpress$^{a}$ Comments 		&	2 M \\
+		Disqus       					&	1.7 M \\
+		Wordpress$^{a}$ Comments 		&	1.7 M \\
 		Wordpress$^{a}$ Posts 			&	1 M \\
-		Disqus       					&	1.3 M \\
 		`Engagement'$^{b}$ 			&	2.4 M \\
 		\hline
 	\end{tabular}
 \end{table}
 % footnotes
-${}^a$ *.com + .org \\
-${}^b$ likes, votes (Disqus, WP, Tumblr, IntenseDebate)
+$^a$.com + .org \\
+$^b$ likes, votes (Disqus, WP, Tumblr, IntenseDebate) \\
 
+\vspace{0.2in}
+
+{\tiny
+$^\dagger$Add'l Premium Publishers: StockTwits, Newsgator; EDC Streams: Facebook, YouTube, Google+, flickr, bitly, Dailymotion, Delicious, Identi.ca, Instagram. Metacafe, Panoramio, Photobucket, Plurk, Reddit, StackOverflow, Vimeo
+}
 \end{frame}
-
 
 
 %%%%%%%%%%%%%%%%%% data science team %%%%%%%%%%%%%%%%%%%
-\begin{frame}
-ds team
+\begin{frame} \frametitle{our team}
+
+%\begin{center}
+3.5 data scientists (academic backgrounds)
+
+\vspace{0.3in}
+
+`marketing'  $\to$ 3x roles: marketing + sales + product
+
+\vspace{0.3in}
+
+ask Qs, answer Qs (about our data)
+
+%\end{center}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%% the data %%%%%%%%%%%%%%%%%%%
-\begin{frame}
-data
+%%%%%%%%%%%%%%%%%%% social data v social media %%%%%%%%%%%%%%%%%%%
+%{
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{./imgs/twac.png}}
+%
+%\begin{frame} \frametitle{\textcolor{black} {social data (v. media)}}
+%
+%%\begin{textblock}{40}(65,60)		%bottom right
+%\begin{textblock}{40}(75,12)		%top right
+%	\includegraphics[scale=0.25]{./imgs/tweet.png}
+%\end{textblock}
+%
+%\end{frame}
+%}
+
+
+%%%%%%%%%%%%%%%%%% social data v social media %%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{\textcolor{white} {social data (v. media)}}
+
+\begin{textblock}{1}(1,12)
+	\includegraphics[scale=0.26]{./imgs/twac.png}
+\end{textblock}
+
+%\begin{textblock}{40}(65,60)		%bottom right
+\begin{textblock}{40}(62,15)		%top right
+	\includegraphics[scale=0.25]{./imgs/tweet.png}
+\end{textblock}
+
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%% data science %%%%%%%%%%%%%%%%%%%
-\begin{frame}
-data science projects
+%%%%%%%%%%%%%%%%%% project: disqus %%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{ex: Disqus comment threads}
+
+\begin{textblock}{1}(5,15)
+	\includegraphics[scale=0.21]{./imgs/disqus1.png}
+\end{textblock}
+
 \end{frame}
+
+%
+
+\begin{frame} \frametitle{ex: Disqus comment threads}
+
+\begin{textblock}{1}(5,15)
+	\includegraphics[scale=0.21]{./imgs/disqus3.png}
+\end{textblock}
+
+\end{frame}
+
+%
+
+\begin{frame} \frametitle{ex: Disqus comment threads}
+
+\begin{textblock}{1}(1,14)
+	\includegraphics[scale=0.155]{./imgs/disqus4.png}
+\end{textblock}
+
+\begin{textblock}{1}(14,67)
+	\includegraphics[scale=0.165]{./imgs/disqus5.png}
+\end{textblock}
+
+\begin{textblock}{1}(66,67)
+	\includegraphics[scale=0.17]{./imgs/disqus6.png}
+\end{textblock}
+
+\end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%% the end %%%%%%%%%%%%%%%%%%%
-\begin{frame} \frametitle{thanks!}
+\begin{frame} \frametitle{}
 
 \vspace{0.5in}
 
 \begin{center}
-\Huge{Qs?}
+\Huge{thanks!}
 
 \vspace{0.5in}
 
-\normalsize{source \& contact info}
+\normalsize{source/slides: \\
+\url{http://bit.ly/ABMeetup}}
 
 \vspace{0.5in}
 
-\Large{Don't forget: we're hiring!} \\
+\Large{Don't forget, we're hiring!} \\
 \url{http://gnip.com/careers}
 \end{center}
 
